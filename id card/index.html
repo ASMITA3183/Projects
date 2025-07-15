@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="idForm">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" accept="image/*"><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name"><br>
+                <label for="empid">Emp ID:</label>
+                <input type="text" id="empid" placeholder="Enter your employee ID"><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number"><br>
+                <button type="button" id="generateBtn">Get my ID card</button>
+            </form>
+        </div>
+        <div class="preview-section">
+            <div id="idCardPreview">
+                <div class="id-card">
+                    <div class="photo-section">
+                        <div class="photo-inner-rect">
+                            <img id="cardPhoto" src="" alt="Photo" style="display:none;"/>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <div class="company-name" id="cardCompany">Yardi</div>
+                        <div class="info-field"><strong>Name:</strong> <span id="cardName">Asmita Avadhut Mhetre</span></div>
+                        <div class="info-field"><strong>Emp ID:</strong> <span id="cardEmpId">7325</span></div>
+                        <div class="info-field"><strong>Phone Number:</strong> <span id="cardPhone">7385618725</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
